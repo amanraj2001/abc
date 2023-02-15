@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            display: inline-block;
+            min-width: 100%;
+        }
+
+        header {
+            background-color: gray;
+            width: 100%;
+            height: 100px;
+            border: 2px solid red;
+        }
+
+        header div {
+            margin: auto;
+            width: 50%;
+        }
+
+        header h2 {
+            margin: 25px;
+            text-align: center;
+        }
+
+        aside {
+            width: 15%;
+            border: 2px solid red;
+            background-color: gray;
+            height: 990px;
+        }
+
+        .side {
+            margin: auto;
+            width: 70%;
+        }
+
+        .side img {
+            width: 50%;
+            margin-top: 35px;
+            /* margin: auto; */
+        }
+
+        .side div {
+            margin-top: 105px;
+
+
+        }
+
+        .side ul li {
+            list-style: none;
+            /* margin: auto; */
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .side div ul li a {
+            font-size: x-large;
+            text-decoration: none;
+        }
+
+        .side div ul li a:hover {
+            color: greenyellow;
+        }
+
+        /* middle section */
+        .top {
+            display: none;
+
+        }
+
+        .top:target {
+            display: block;
+        }
+
+        section {
+            display: flex;
+        }
+
+        .container {
+            width: 80%;
+        }
+
+        .box {
+            width: 90%;
+            margin: auto;
+        }
+
+        .one h2 {
+            font-size: 50px;
+        }
+
+        .one ul li {
+            list-style: none;
+            margin: 15px;
+            font-size: xx-large;
+
+        }
+
+        .obj h3 {
+            font-size: 50px;
+        }
+
+        .obj p {
+            font-size: xx-large;
+        }
+
+        #Qualification {
+            margin-top: 50px;
+        }
+
+        #experience {
+            margin-top: 50px;
+        }
+
+        #experience ul li {
+            list-style: none;
+            margin: 10px;
+
+        }
+        table{
+            width: 100%;
+        }
+        table h4{
+            font-size: xx-large;
+        }
+        table tr{
+            font-size:x-large ; 
+        }
+        
+
+        /* media query */
+        @media (max-width:1200px) {
+            section {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+
+            aside {
+                width: 100%;
+            }
+
+            .side {
+                margin: auto;
+                width: 40%;
+            }
+
+            .side img {
+                width: 70%;
+                /* margin: auto; */
+            }
+
+            header h2 {
+                text-align: justify;
+            }
+
+            .one h2 {
+                font-size: 35px;
+            }
+
+            .obj h3 {
+                font-size: 35px;
+            }
+
+            .obj p {
+                font-size: 20px;
+            }
+            .one ul li {
+            width: 100%;
+            font-size: 20px;
+
+        }
+        table{
+            width: 40%;
+        }
+        table h4{
+            font-size: x-large;
+        }
+        table tr{
+            font-size: large;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+
+            <h2>Resume</h2>
+        </div>
+    </header>
+
+    <section>
+        <aside>
+            <div class="side">
+                <img src="https://www.shutterstock.com/image-vector/surgeon-doctor-avatar-character-icon-600w-1009872754.jpg"
+                    alt="Error Loading">
+                <div>
+                    <ul>
+                        <li><a href="#personal" target="_self">Personal Info</a></li>
+                        <li><a href="#Objective" target="_self">Objective</a></li>
+                        <li><a href="#Qualification" target="_self">Qualification</a></li>
+                        <li><a href="#experience" target="_self">Experience</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </aside>
+
+        <div class="container">
+            <div class="box">
+                <div class="top" id="personal">
+                    <div class="one">
+                        <h2>Personal Details</h2>
+                        <ul>
+                            <li>Name : Aman Rajput</li>
+                            <li>Phone Number : 9876543210</li>
+                            <li>Date of birth : 04-12-1999</li>
+                            <li>Gender : Male</li>
+                            <li>Marital Status : Unmarried</li>
+                            <li>Languages known : Hindi, English, Gujarati</li>
+                            <li>Religion : Hindu</li>
+                            <li>Hobbies : Reading Novels, playing Cricket</li>
+
+
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="top" id="Objective">
+                    <div class="obj">
+                        <h3>Objective</h3>
+                        <p>To secure a challenging position in a reputable organization to expand my learnings,
+                            knowledge, and skills</p>
+                    </div>
+                </div>
+                <div class="top" id="Qualification">
+                    <h4 style="color: green;font-family:verdana,sans-serif; ">Educational
+                        Qualification
+                    </h4>
+                    <table border="2px black" >
+                        <tr align="center" style="text-align:center;">
+                            <th style="color: green;">Qualification</th>
+                            <th style="color: green;">University</th>
+                            <th style="color: green;">Year</th>
+                            <th style="color: green;">Result</th>
+                        </tr>
+                        <tr  style=" text-align: center;">
+                            <td>Masters</td>
+                            <td>Yale University</td>
+                            <td>2017</td>
+                            <td>75%</td>
+                        </tr>
+                        <tr  style="text-align: center;">
+                            <td>Bachelors</td>
+                            <td>Harvard University</td>
+                            <td>2015</td>
+                            <td>85%</td>
+                        </tr>
+                        <tr  style="text-align: center;">
+                            <td>ICSE</td>
+                            <td>St. Island School</td>
+                            <td>2011</td>
+                            <td>77%</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="top" id="experience">
+                    <h4 style="color: green;font-family:verdana,sans-serif;">Internships</h4>
+                    <ul>
+                        <li >
+                            Worked with senir developers to manage large, Complex Design projects for law firms.
+                        </li>
+                        <li >
+                            Worked with CEO and CFO to analyze client's website and develop mobile app previews.
+                        </li>
+                        <li >
+
+                            Maintain Current websites to make sure they are functioning correctly.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
