@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+
+        }
+
+        body {
+            display: inline-block;
+            width: 100%;
+        }
+
+        header {
+
+            overflow: auto;
+            background-color: gray;
+            /* border: 2px solid black; */
+            border-bottom: 2px solid blue;
+        }
+
+        .logo {
+            float: left;
+
+            margin-left: 13%;
+        }
+
+        .logo img {
+            width: 50%;
+            margin-top: 3%;
+        }
+
+        header nav {
+            margin-top: 1%;
+            width: 92%;
+        }
+
+        header nav ul {
+            list-style: none;
+            float: right;
+        }
+
+        header nav ul li {
+            float: left;
+            margin: 12px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        .box {
+            display: flex;
+
+            margin-top: 3px;
+
+        }
+
+        .left {
+            /* border: 2px solid red;  */
+            width: 25%;
+            /* height: 1000px; */
+            background-color: rgb(177, 177, 177);
+            font-size: large;
+            overflow: auto;
+
+        }
+
+        .left div {
+            margin: 30px;
+
+        }
+
+        .left ul li {
+            margin: 5px;
+        }
+
+        .left ul li a {
+            text-decoration: none;
+
+        }
+
+
+
+        .right{
+            width: 100%;
+        }
+        .right  header {
+            background-color: gray;
+            width: 100%;
+            height: 100px;
+            border: 2px solid red;
+        }
+
+        .right  header div {
+            margin: auto;
+            width: 50%;
+        }
+
+        .right  header h2 {
+            margin: 25px;
+            text-align: center;
+        }
+
+        .right  aside {
+            width: 35%;
+            border: 2px solid red;
+            background-color: gray;
+            height: 990px;
+        }
+
+        .right  .side {
+            margin: auto;
+            width: 70%;
+        }
+
+        .right  .side img {
+            width: 60%;
+            margin-top: 35px;
+            /* margin: auto; */
+        }
+
+        .right  .side div {
+            margin-top: 105px;
+
+
+        }
+
+        .right  .side ul li {
+            list-style: none;
+            /* margin: auto; */
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .right  .side div ul li a {
+            font-size: x-large;
+            text-decoration: none;
+        }
+
+        .right .side div ul li a:hover {
+            color: greenyellow;
+        }
+
+        /* middle section */
+        .right  .top {
+            display: none;
+
+        }
+
+        .right  .top:target {
+            display: block;
+        }
+
+        .right   section {
+            display: flex;
+        }
+
+        .right   .container {
+            width: 80%;
+        }
+
+        .right  .box {
+            width: 90%;
+            margin: auto;
+        }
+
+        .right   .one h2 {
+            font-size: 50px;
+        }
+
+        .right  .one ul li {
+            list-style: none;
+            margin: 15px;
+            font-size: xx-large;
+
+        }
+
+        .right  .obj h3 {
+            font-size: 50px;
+        }
+
+        .right  .obj p {
+            font-size: xx-large;
+        }
+
+        .right  #Qualification {
+            margin-top: 50px;
+        }
+
+        .right #experience {
+            margin-top: 50px;
+        }
+
+        .right  #experience ul li {
+            list-style: none;
+            margin: 10px;
+
+        }
+
+        .right  table {
+            width: 100%;
+        }
+
+        .right table h4 {
+            font-size: xx-large;
+        }
+
+        .right  table tr {
+            font-size: x-large;
+        }
+
+
+        /* media query */
+
+
+        @media (max-width:966px) {
+            .logo {
+                float: none;
+                /* width: 30%; */
+                /* margin: auto; */
+            }
+
+            .logo img {
+                width: 20%;
+            }
+
+            header nav ul {
+                float: none;
+            }
+
+            header nav ul li {
+                float: none;
+                width: 50%;
+                font-size: larger;
+
+                margin: 12px auto;
+            }
+
+            .box {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+
+            .left {
+                width: 100%;
+            }
+
+               .right section {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
+
+                .right  aside {
+                    width: 100%;
+                }
+
+                .right  .side {
+                    margin: auto;
+                    width: 40%;
+                }
+
+                .right  .side img {
+                    width: 70%;
+                    /* margin: auto; */
+                }
+
+                .right  header h2 {
+                    text-align: justify;
+                }
+
+                .right  .one h2 {
+                    font-size: 35px;
+                }
+
+                .right  .obj h3 {
+                    font-size: 35px;
+                }
+
+                .right  .obj p {
+                    font-size: 20px;
+                }
+
+                .right  .one ul li {
+                    width: 100%;
+                    font-size: 20px;
+
+                }
+
+                .right  table {
+                    width: 100%;
+                }
+
+                .right  table h4 {
+                    font-size: x-large;
+                }
+
+                .right  table tr {
+                    font-size: large;
+                }
+            }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI_57UvECIA4gR4E-kMvtitxhsLDzGBND9-m04XDXDQQ&s"
+                alt="Error" srcset="">
+
+
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./Home.html">Home</a></li>
+                <li><a href="./Html.html">HTML</a></li>
+                <li><a href="./CSS.html">CSS</a></li>
+                <li><a href="#">Bootstrap</a></li>
+                <li><a href="#">Javascript</a></li>
+                <li><a href="#">JQuery</a></li>
+                <li><a href="#">Mini Project</a></li>
+                <li><a href="#">SQL</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="main">
+            <div class="box">
+                <div class="left">
+                    <div>
+
+                        <ul>
+                            <li>Day 4</li>
+                            <ul>
+                                <li>Assignment</li>
+                                <ul>
+                                    <li><a href="./css_assign1.html">Assignment 1</a></li>
+                                    <li><a href="./css_assign2.html" target="_blank">Assignment 2</a></li>
+                                </ul>
+                            </ul>
+                            <ul>
+                                <li>Practice</li>
+                                <ul>
+                                    <li><a href="./css_prac1.html">Practice 1</a></li>
+                                    <li><a href="./css_pract2.html">Practice 2</a></li>
+                                    <li><a href="./css_pract3.html">Practice 3</a></li>
+                                </ul>
+                            </ul>
+                        </ul>
+                        <ul>
+                            <li>Day 5</li>
+                            <ul>
+                                <li>Assignment</li>
+                                <ul>
+                                    <li><a href="./css_-assign1.html">Assignment 1</a></li>
+                                    <li><a href="./css_-assign2.html">Assignment 2</a></li>
+                                    <li><a href="./css_-assign3.html" target="_blank">Assignment 3</a></li>
+                                    <li><a href="./css_-assign4.html">Assignment 4</a></li>
+
+                                </ul>
+                            </ul>
+                            <ul>
+                                <li>Practice</li>
+                                <ul>
+                                    <li><a href="./css_-prac1.html">Practice 1</a></li>
+                                    <li><a href="./css_-prac2.html">Practice 2</a></li>
+                                </ul>
+                            </ul>
+                        </ul>
+
+                    </div>
+
+                </div>
+                <div class="right">
+                    <header>
+                        <div>
+
+                            <h2>Resume</h2>
+                        </div>
+                    </header>
+
+                    <section>
+                        <aside>
+                            <div class="side">
+                                <img src="https://www.shutterstock.com/image-vector/surgeon-doctor-avatar-character-icon-600w-1009872754.jpg"
+                                    alt="Error Loading">
+                                <div>
+                                    <ul>
+                                        <li><a href="#personal" target="_self">Personal Info</a></li>
+                                        <li><a href="#Objective" target="_self">Objective</a></li>
+                                        <li><a href="#Qualification" target="_self">Qualification</a></li>
+                                        <li><a href="#experience" target="_self">Experience</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </aside>
+
+                        <div class="container">
+                            <div class="box">
+                                <div class="top" id="personal">
+                                    <div class="one">
+                                        <h2>Personal Details</h2>
+                                        <ul>
+                                            <li>Name : Aman Rajput</li>
+                                            <li>Phone Number : 9876543210</li>
+                                            <li>Date of birth : 04-12-1999</li>
+                                            <li>Gender : Male</li>
+                                            <li>Marital Status : Unmarried</li>
+                                            <li>Languages known : Hindi, English, Gujarati</li>
+                                            <li>Religion : Hindu</li>
+                                            <li>Hobbies : Reading Novels, playing Cricket</li>
+
+
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="top" id="Objective">
+                                    <div class="obj">
+                                        <h3>Objective</h3>
+                                        <p>To secure a challenging position in a reputable organization to expand my
+                                            learnings,
+                                            knowledge, and skills</p>
+                                    </div>
+                                </div>
+                                <div class="top" id="Qualification">
+                                    <h4 style="color: green;font-family:verdana,sans-serif; ">Educational
+                                        Qualification
+                                    </h4>
+                                    <table border="2px black">
+                                        <tr align="center" style="text-align:center;">
+                                            <th style="color: green;">Qualification</th>
+                                            <th style="color: green;">University</th>
+                                            <th style="color: green;">Year</th>
+                                            <th style="color: green;">Result</th>
+                                        </tr>
+                                        <tr style=" text-align: center;">
+                                            <td>Masters</td>
+                                            <td>Yale University</td>
+                                            <td>2017</td>
+                                            <td>75%</td>
+                                        </tr>
+                                        <tr style="text-align: center;">
+                                            <td>Bachelors</td>
+                                            <td>Harvard University</td>
+                                            <td>2015</td>
+                                            <td>85%</td>
+                                        </tr>
+                                        <tr style="text-align: center;">
+                                            <td>ICSE</td>
+                                            <td>St. Island School</td>
+                                            <td>2011</td>
+                                            <td>77%</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="top" id="experience">
+                                    <h4 style="color: green;font-family:verdana,sans-serif;">Internships</h4>
+                                    <ul>
+                                        <li>
+                                            Worked with senir developers to manage large, Complex Design projects for
+                                            law firms.
+                                        </li>
+                                        <li>
+                                            Worked with CEO and CFO to analyze client's website and develop mobile app
+                                            previews.
+                                        </li>
+                                        <li>
+
+                                            Maintain Current websites to make sure they are functioning correctly.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
